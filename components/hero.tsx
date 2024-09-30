@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="max-w-contentContainer mx-auto py-10 mdl:py-24 flex flex-col gap-4 lgl:gap-98 mdl:px-10 xl:px-4"
+      className="max-w-contentContainer mx-auto py-10 mdl:py-24 flex flex-col gap-4 lgl:gap-8 mdl:px-10 xl:px-4"
     >
       <motion.h3
         initial={{ y: 10, opacity: 0 }}
@@ -31,9 +31,8 @@ export default function Hero() {
       >
         {" "}
         I am a final-year software engineering student with a passion for technology and creating solutions that make a
-        difference. My experience encompasses web, mobile, front-end, and back-end development. While I strive to stay
-        current with the latest trends and technologies, I believe that strong fundamentals are essential for
-        effectively understanding and applying new concepts.{" "}
+        difference. While I strive to stay current with the latest trends and technologies, I believe that strong
+        fundamentals are essential for effectively understanding and applying new concepts.{" "}
       </motion.p>
 
       <Link href="#projects">
