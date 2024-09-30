@@ -1,12 +1,12 @@
 import { useState } from "react";
 import ExperienceDetails from "./ExperienceDetails";
 import SectionTitle from "./sectionTitle";
-import experiences from "@/public/experience.json";
+import experiences from "@/public/data/experience";
 
 export default function Experience() {
   const [selectedJobIndex, setSelectedJobIndex] = useState(0);
   return (
-    <section id="experience" className="max-w-containerSmall mx-auto py-10 lgl:py32 px-4">
+    <section id="experience" className="max-w-containerSmall mx-auto py-10 lgl:py-32 px-4">
       <div>
         <SectionTitle title={"My Work Experience"} sectionNum={"02."} />
 
@@ -25,7 +25,9 @@ export default function Experience() {
             ))}
           </ul>
 
-          <ExperienceDetails details={experiences[selectedJobIndex]} />
+          <div className="flex-1 md:w-1/2 lg:w-1/3">
+            <ExperienceDetails details={experiences[selectedJobIndex]} />
+          </div>
         </div>
       </div>
     </section>

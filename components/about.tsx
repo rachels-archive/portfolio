@@ -4,7 +4,7 @@ import { FaCode } from "react-icons/fa6";
 
 export default function About() {
   return (
-    <section id="about" className="max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8">
+    <section id="about" className="max-w-containerSmall mx-auto px-4 py-10 lgl:py-32 flex flex-col gap-8">
       <SectionTitle title={"About Me"} sectionNum="01." />
 
       <div className="flex flex-col lgl:flex-row gap-16">
