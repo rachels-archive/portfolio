@@ -1,5 +1,6 @@
 "use client";
 import Head from "next/head";
+
 import Navbar from "@/components/navbar";
 import LeftSidebar from "@/components/leftSidebar";
 import RightSidebar from "@/components/rightSidebar";
@@ -10,6 +11,7 @@ import Experience from "@/components/experience";
 import Projects from "@/components/projects";
 import Archive from "@/components/Archive";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -17,7 +19,7 @@ export default function Home() {
       <Head>
         <link rel="icon" href="/images/icon.ico" />
       </Head>
-      <main className="w-full min-h-screen font-bodyFont bg-bodyColor text-textLight overflow-x-hidden ">
+      <main className="w-full min-h-screen font-bodyFont bg-bodyColor text-textLight overflow-x-hidden scrollbar scrollbar-track">
         <Navbar />
 
         <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between">
@@ -36,7 +38,9 @@ export default function Home() {
             <Projects />
             <Archive />
             <Contact />
+            <Footer />
           </div>
+
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
