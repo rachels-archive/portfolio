@@ -14,19 +14,6 @@ export default function Navbar() {
         <div className="hidden mdl:inline-flex items-center gap-7">
           <ul className="flex gap-7 text-[16px]">
             <Link
-              href="#home"
-              className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen duration-300 nav-link"
-            >
-              <motion.li
-                initial={{ y: -10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.3, delay: 0.1 }}
-              >
-                1. Home
-              </motion.li>
-            </Link>
-
-            <Link
               href="#about"
               className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen duration-300 nav-link"
             >
@@ -35,7 +22,7 @@ export default function Navbar() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.3, delay: 0.2 }}
               >
-                2. About
+                1. About
               </motion.li>
             </Link>
 
@@ -48,7 +35,7 @@ export default function Navbar() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.3, delay: 0.3 }}
               >
-                3. Experience
+                2. Experience
               </motion.li>
             </Link>
 
@@ -61,7 +48,7 @@ export default function Navbar() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.3, delay: 0.4 }}
               >
-                4. Projects
+                3. Projects
               </motion.li>
             </Link>
           </ul>

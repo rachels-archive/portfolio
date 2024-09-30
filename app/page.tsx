@@ -9,6 +9,7 @@ import About from "@/components/about";
 import Experience from "@/components/experience";
 import Projects from "@/components/projects";
 import Archive from "@/components/Archive";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
             <Experience />
             <Projects />
             <Archive />
+            <Contact />
           </div>
           <motion.div
             initial={{ y: 100, opacity: 0 }}
