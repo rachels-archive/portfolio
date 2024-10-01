@@ -1,7 +1,6 @@
 import Image from "next/image";
 import SectionTitle from "./sectionTitle";
 import { FaCode } from "react-icons/fa6";
-import { useRef } from "react";
 
 export default function About() {
   return (

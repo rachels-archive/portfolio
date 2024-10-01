@@ -1,6 +1,5 @@
 "use client";
 import Head from "next/head";
-
 import Navbar from "@/components/navbar";
 import LeftSidebar from "@/components/leftSidebar";
 import RightSidebar from "@/components/rightSidebar";
@@ -12,15 +11,26 @@ import Projects from "@/components/projects";
 import Archive from "@/components/Archive";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { useState } from "react";
 
 export default function Home() {
+  const [isOverflowHidden, setIsOverflowHidden] = useState(false);
+
+  const toggleOverflow = (hide: boolean) => {
+    setIsOverflowHidden(hide);
+  };
+
   return (
     <>
       <Head>
         <link rel="icon" href="/images/icon.ico" />
       </Head>
-      <main className="w-full min-h-screen font-bodyFont bg-bodyColor text-textLight overflow-x-hidden scrollbar scrollbar-track">
-        <Navbar />
+      <main
+        className={`w-full min-h-screen font-bodyFont bg-bodyColor text-textLight ${
+          isOverflowHidden ? "overflow-hidden" : "overflow-y-scroll"
+        } scroll-smooth`}
+      >
+        <Navbar onToggleOverflow={toggleOverflow} />
 
         <div className="w-full h-[88vh] xl:flex items-center gap-20 justify-between">
           <motion.div
@@ -31,7 +41,7 @@ export default function Home() {
           >
             <LeftSidebar />
           </motion.div>
-          <div className="h-[88vh] mx-auto p-4">
+          <div className="h-[88vh] mx-auto p-4 ">
             <Hero />
             <About />
             <Experience />
