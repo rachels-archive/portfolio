@@ -77,6 +77,9 @@ jobs:
           ${{ steps.detect-package-manager.outputs.runner }} next build
           touch out/.nojekyll
 
+      - name: Create .nojekyll
+        run: touch ./out/.nojekyll
+
       - name: List output directory
         run: ls -la ./out || echo "Output directory does not exist."
 
