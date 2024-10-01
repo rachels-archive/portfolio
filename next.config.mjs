@@ -5,4 +5,6 @@ const nextConfig = {
   distDir: 'out',
 };
 
+export const { basePath } = nextConfig; // Add this line
+
 export default nextConfig;
