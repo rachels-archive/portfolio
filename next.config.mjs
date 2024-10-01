@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  distDir: 'out', // Specify your output directory
+  output: 'export',
 };
 
 export default nextConfig;
