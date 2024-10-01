@@ -3,7 +3,6 @@ import SectionTitle from "./SectionTitle";
 import { FaGithub } from "react-icons/fa6";
 import { LuExternalLink } from "react-icons/lu";
 import projects from "@/public/data/projects";
-import { basePath } from '../next.config.mjs';
 
 export default function Projects() {
   const featuredProjects = projects.filter((project) => project.type === "featured");
@@ -20,7 +19,7 @@ export default function Projects() {
             <a className="w-full h-auto relative group" href={project.projectUrl} target="_blank">
               <div className="relative w-full h-auto group">
                 <Image
-                  src={`${basePath}/images/project4.png`}
+                  src={project.imageUrl}
                   width={0}
                   height={0}
                   sizes="100vw"
