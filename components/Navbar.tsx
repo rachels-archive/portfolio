@@ -21,7 +21,7 @@ const Navbar: React.FC<NavbarProps> = ({ onToggleOverflow }) => {
     <div className="w-full shadow-navbarShadow h-20 bg-bodyColor sticky top-0 z-50 px-4">
       <div className="max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between">
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
-          <Image src="/icon.ico" width={50} height={50} alt="logo" />
+          <Image src="/images/icon.ico" width={50} height={50} alt="logo" />
         </motion.div>
 
         <div className="hidden mdl:inline-flex items-center gap-7">
