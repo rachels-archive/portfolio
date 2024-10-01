@@ -2,8 +2,8 @@ name: Deploy Next.js site to Pages
 
 on:
   push:
-    branches: ["main"]
-  workflow_dispatch:
+    branches: ["main"]  # Trigger on pushes to the main branch
+  workflow_dispatch:  # Allow manual triggering of the workflow
 
 permissions:
   contents: read
@@ -45,13 +45,16 @@ jobs:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }} # Enable caching for npm or yarn
 
+      - name: Clean up previous build artifacts
+        run: rm -rf .next # Remove previous build artifacts to ensure a clean build
+
       - name: Restore cache for Node modules
         uses: actions/cache@v4
         with:
           path: |
             ~/.npm # Path for npm modules cache (for npm)
             ~/.yarn-cache # Path for yarn cache (for yarn)
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock', '**/*.{js,jsx,ts,tsx}') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
 
@@ -76,4 +79,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+
 
