@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/portfolio', // Replace with your repository name
+  basePath: '/portfolio',
+  images: {
+    unoptimized: true, // Disable image optimization
+  },
   distDir: 'out',
 };
-
-export const { basePath } = nextConfig; // Add this line
 
 export default nextConfig;
