@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SectionTitle from "./sectionTitle";
+import SectionTitle from "./SectionTitle";
 import { FaCode } from "react-icons/fa6";
 
 export default function About() {

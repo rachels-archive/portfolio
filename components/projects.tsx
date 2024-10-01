@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SectionTitle from "./sectionTitle";
+import SectionTitle from "./SectionTitle";
 import { FaGithub } from "react-icons/fa6";
 import { LuExternalLink } from "react-icons/lu";
 import projects from "@/public/data/projects";

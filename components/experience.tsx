@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ExperienceDetails from "./ExperienceDetails";
-import SectionTitle from "./sectionTitle";
+import SectionTitle from "./SectionTitle";
 import experiences from "@/public/data/experience";
 
 export default function Experience() {

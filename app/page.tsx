@@ -5,7 +5,7 @@ import LeftSidebar from "@/components/leftSidebar";
 import RightSidebar from "@/components/rightSidebar";
 import { motion } from "framer-motion";
 import Hero from "@/components/hero";
-import About from "@/components/about";
+import About from "@/components/About";
 import Experience from "@/components/experience";
 import Projects from "@/components/projects";
 import Archive from "@/components/Archive";

@@ -1,4 +1,4 @@
-import SectionTitle from "./sectionTitle";
+import socials from "@/public/data/socials";
 
 export default function Contact() {
   return (
@@ -14,7 +14,7 @@ export default function Contact() {
         Thank you for exploring my portfolio! If you liked what you saw and want to discuss job opportunities, feel free
         to connect with me on LinkedIn and discuss!
       </p>
-      <a href="">
+      <a href={`mailto:${socials.email}`}>
         <button className="border-2 border-textGreen rounded-lg py-3 px-5 text-textGreen hover:bg-hoverColor">
           Let's Connect!
         </button>
