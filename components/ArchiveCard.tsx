@@ -33,7 +33,7 @@ export default function ArchiveCard() {
           <div>
             <div className="flex flex-row gap-4 justify-between bottom-0">
               <a
-                href={project.projectUrl}
+                href={project.githubUrl}
                 className="text-sm flex items-center gap-2 hover:text-textGreen relative whitespace-nowrap"
                 target="_blank"
               >
@@ -43,7 +43,7 @@ export default function ArchiveCard() {
                 <span>View Code</span>
               </a>
               <a
-                href={project.githubUrl}
+                href={project.projectUrl}
                 className="text-sm flex items-center gap-2 hover:text-textGreen relative whitespace-nowrap"
                 target="_blank"
               >
