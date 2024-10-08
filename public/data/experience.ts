@@ -2,7 +2,7 @@ const experiences = [
   {
     title: "Freelance Web Developer",
     date: "Jan 2024 - Ongoing",
-    company: "Hilti",
+    company: "Self Employed",
     descriptions: [
       "Designed and developed 10+ custom responsive WordPress websites for clients, while integrating SEO plugins to improve search visibility.",
       "Performed ongoing maintenance for WordPress websites, including troubleshooting, implementing security measures, and monitoring performance.",
