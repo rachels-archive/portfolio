@@ -79,7 +79,7 @@ export default function About() {
           </ul>
         </div>
         <div className="hidden lgl:flex flex-col justify-end">
-          <Image src="/images/illustration.png" alt="illustration" width={300} height={400} />
+          <Image src="/portfolio/images/illustration.png" alt="illustration" width={300} height={400} />
         </div>
       </div>
     </section>
